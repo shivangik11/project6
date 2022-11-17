@@ -13,6 +13,7 @@ import{
   StickyIn,
   ZoomIn,
 } from 'react-scroll-motion';
+
   import './style.css'
   import headerImage from "../img/my-image.png"
   import projectOne from '../img/project-1.png'
@@ -22,9 +23,7 @@ import{
 
 
 const Home = () => {
-
-  const ZoomInScrollOut = batch (StickyIn(), FadeIn(), ZoomIn())
-
+ const ZoomInScrollOut = batch (StickyIn(), FadeIn(), ZoomIn())
   const work = [
     {
       name: "Project 1",
@@ -48,7 +47,7 @@ const Home = () => {
       <ScrollPage page={0}>
         <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
          <div className="image-container">
-          <img src={headerImage} alt="header"/>
+           <img src={headerImage} alt="header"/>
           <div className="black-background"></div>
          </div>
         </Animator>
@@ -71,7 +70,7 @@ const Home = () => {
          <Animator animation={batch(Fade(), Sticky(), MoveOut(-100, 100))}>
           <div className="position">
             <div></div>
-            <h2 className="last">
+             <h2 className="last">
               UI/UX Desiger 
             </h2>
           </div>
